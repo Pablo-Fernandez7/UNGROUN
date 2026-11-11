@@ -1,0 +1,2034 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 80px;
+    letter-spacing: 12px;
+    font-weight: 900;
+}
+
+p {
+    margin-top: 15px;
+    color: #999;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #888;
+}
+
+main {
+    text-align: center;
+}
+
+main h1 {
+    font-size: 100px;
+    letter-spacing: 18px;
+}
+
+main p {
+    font-size: 12px;
+    letter-spacing: 6px;
+    margin-top: 25px;
+    color: #aaa;
+}
+
+.explore-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 18px 35px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.collection {
+    width: 100%;
+    padding: 100px 60px;
+    margin-top: 150px;
+}
+
+.collection h2 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 6px;
+    margin-bottom: 60px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product {
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-image {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    background: #1a1a1a;
+    display: block;
+}
+
+.product h3 {
+    margin-top: 25px;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.product p {
+    font-size: 10px;
+    color: #777;
+    letter-spacing: 2px;
+}
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
+        url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+.product:hover {
+    transform: translateY(-10px);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main h1,
+main p,
+.explore-btn {
+    animation: fadeIn 1s ease forwards;
+}
+.about {
+    margin-top: 120px;
+    min-height: 450px;
+    padding: 120px 20px;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 42px;
+    letter-spacing: 6px;
+    margin-bottom: 35px;
+}
+
+.about p {
+    max-width: 650px;
+    font-size: 13px;
+    line-height: 2;
+    color: #aaa;
+    letter-spacing: 3px;
+}
+
+.about span {
+    margin-top: 35px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+footer {
+    width: 100%;
+    padding: 70px 40px 30px;
+    background-color: #050505;
+    border-top: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 32px;
+    letter-spacing: 8px;
+}
+
+footer p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #777;
+    margin-top: 15px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 35px;
+    margin: 40px 0;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+footer span {
+    color: #555;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+.product-detail {
+    width: 100%;
+    min-height: 100vh;
+    padding: 140px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.product-detail img {
+    width: 420px;
+    height: 520px;
+    object-fit: cover;
+}
+
+.product-info {
+    max-width: 400px;
+}
+
+.product-info h1 {
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.product-info .price {
+    color: white;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.product-info .description {
+    color: #999;
+    font-size: 13px;
+    line-height: 2;
+    margin-top: 30px;
+}
+
+.buy-btn {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-top: 35px;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #aaa;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #888;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+.view-product {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: 1px solid #555;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.view-product:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
+.size-selector {
+    margin-top: 30px;
+}
+
+.size-selector p {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.sizes {
+    display: flex;
+    gap: 12px;
+}
+
+.size-btn {
+    width: 48px;
+    height: 45px;
+    background: transparent;
+    border: 1px solid #555;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.size-btn:hover {
+    background: white;
+    color: black;
+}
+.size-btn.selected {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+/* CART PAGE */
+
+.cart-page {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 0 30px;
+    min-height: 60vh;
+}
+
+.cart-page h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid #333;
+}
+
+.cart-item h3 {
+    margin-bottom: 10px;
+}
+
+.cart-item p {
+    color: #aaa;
+}
+
+.cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-actions button {
+    background: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+.cart-actions button:hover {
+    background: white;
+    color: black;
+}
+
+.cart-summary {
+    margin-top: 45px;
+    text-align: right;
+}
+
+.cart-summary h2 {
+    margin-bottom: 25px;
+}
+
+.cart-summary .back-link {
+    display: inline-block;
+}
+
+.empty-cart {
+    color: #888;
+    padding: 30px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cart-summary {
+        text-align: left;
+    }
+}
+
+/* PREMIUM CART DESIGN */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #333;
+}
+
+.cart-product-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.cart-product-info img {
+    width: 110px;
+    height: 130px;
+    object-fit: cover;
+    background: #181818;
+}
+
+.cart-product-info h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.cart-product-info p {
+    color: #999;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.cart-product-info .cart-price {
+    color: white;
+    font-size: 15px;
+}
+
+.cart-actions button {
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.cart-summary {
+    border-top: 1px solid #333;
+    padding-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        gap: 20px;
+    }
+
+    .cart-product-info img {
+        width: 85px;
+        height: 105px;
+    }
+}
+
+/* CART LAYOUT IMPROVEMENTS */
+
+.cart-page {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 150px 30px 80px;
+}
+
+.cart-page h1 {
+    text-align: left;
+    font-size: 42px;
+    letter-spacing: 5px;
+}
+
+.cart-item {
+    width: 100%;
+}
+
+.cart-product-info {
+    flex: 1;
+}
+
+.cart-actions {
+    flex-shrink: 0;
+}
+
+.cart-summary h2 {
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 25px 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .cart-page {
+        padding: 120px 20px 50px;
+    }
+
+    .cart-page h1 {
+        font-size: 30px;
+    }
+}
+/* PRODUCT BADGES */
+
+.product {
+    position: relative;
+}
+
+.product-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    color: black;
+    padding: 9px 12px;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* SIZE GUIDE */
+
+.size-guide {
+    margin-top: 25px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+}
+
+.size-guide summary {
+    color: white;
+    font-size: 11px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.size-guide summary::after {
+    content: "+";
+    float: right;
+    font-size: 16px;
+}
+
+.size-guide[open] summary::after {
+    content: "-";
+}
+
+.size-guide table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.size-guide th,
+.size-guide td {
+    padding: 13px 8px;
+    border-bottom: 1px solid #292929;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.size-guide th {
+    color: #888;
+    font-weight: normal;
+}
+
+.size-guide td {
+    color: white;
+}
+
+/* PLATFORM SELECTOR */
+
+.platform-selector {
+    position: relative;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+#platform-button {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#platform-button span {
+    margin-left: 8px;
+}
+
+.platform-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 130px;
+    background: #151515;
+    border: 1px solid #333;
+    z-index: 1000;
+}
+
+.platform-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.platform-menu button {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 13px 16px;
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.platform-menu button:hover {
+    background: #292929;
+}
+
+/* MOBILE PREVIEW MODE */
+
+body.mobile-preview {
+    width: 390px;
+    min-height: 844px;
+    margin: 30px auto;
+    overflow-x: hidden;
+    border: 5px solid #333;
+    border-radius: 25px;
+    position: relative;
+    display: block;
+    background: #0a0a0a;
+}
+
+body.mobile-preview header {
+    position: relative;
+    padding: 20px 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+body.mobile-preview .logo {
+    font-size: 19px;
+}
+
+body.mobile-preview .platform-selector {
+    margin: 0;
+}
+
+body.mobile-preview nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+body.mobile-preview nav a {
+    font-size: 9px;
+}
+
+body.mobile-preview main {
+    min-height: 600px;
+    padding: 20px;
+}
+
+body.mobile-preview main h1 {
+    font-size: 42px;
+    letter-spacing: 7px;
+}
+
+body.mobile-preview main p {
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+body.mobile-preview .collection {
+    padding: 60px 20px;
+    margin-top: 0;
+}
+
+body.mobile-preview .products {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+body.mobile-preview .product {
+    width: 100%;
+    max-width: 280px;
+}
+
+body.mobile-preview .product-image {
+    height: 330px;
+}
+
+body.mobile-preview .about {
+    margin-top: 40px;
+    padding: 70px 20px;
+}
+
+body.mobile-preview .about h2 {
+    font-size: 27px;
+}
+
+body.mobile-preview .about p {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+body.mobile-preview footer {
+    padding: 50px 15px 25px;
+}
+
+body.mobile-preview .footer-links {
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 430px) {
+    body.mobile-preview {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+}
+/* MOBILE PREVIEW: PRODUCT PAGES */
+
+body.mobile-preview .product-detail {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+    min-height: auto;
+}
+
+body.mobile-preview .product-detail > img {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    max-height: 400px;
+}
+
+body.mobile-preview .product-info {
+    width: 100%;
+    max-width: 330px;
+}
+
+body.mobile-preview .product-info h1 {
+    font-size: 28px;
+}
+
+/* MOBILE PREVIEW: CART */
+
+body.mobile-preview .cart-page {
+    padding: 50px 20px;
+}
+
+body.mobile-preview .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+body.mobile-preview .cart-product-info {
+    flex-wrap: wrap;
+}
+
+body.mobile-preview .cart-summary {
+    text-align: left;
+}
+
+/* ==============================
+   MOBILE PREVIEW - DESIGN POLISH
+============================== */
+
+body.mobile-preview {
+    box-sizing: border-box;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+}
+
+/* HEADER */
+
+body.mobile-preview header {
+    align-items: center;
+    padding: 22px 16px;
+    border-bottom: 1px solid #222;
+}
+
+body.mobile-preview nav {
+    margin-top: 8px;
+}
+
+body.mobile-preview nav a {
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* HERO */
+
+body.mobile-preview main {
+    min-height: 570px;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+body.mobile-preview main h1 {
+    font-size: 38px;
+    letter-spacing: 6px;
+}
+
+body.mobile-preview main p {
+    line-height: 1.8;
+    text-align: center;
+}
+
+body.mobile-preview .explore-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 20px;
+    font-size: 10px;
+}
+
+/* COLLECTION */
+
+body.mobile-preview .collection h2 {
+    font-size: 23px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+body.mobile-preview .product {
+    max-width: 100%;
+}
+
+body.mobile-preview .product-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+body.mobile-preview .view-product {
+    display: inline-block;
+    padding: 13px 20px;
+    font-size: 10px;
+}
+
+/* ABOUT */
+
+body.mobile-preview .about p {
+    line-height: 2;
+    text-align: center;
+}
+
+body.mobile-preview .about span {
+    display: block;
+    margin-top: 25px;
+}
+
+/* PRODUCT DETAILS */
+
+body.mobile-preview .buy-btn {
+    width: 100%;
+    padding: 16px;
+}
+
+body.mobile-preview .size-options {
+    flex-wrap: wrap;
+}
+
+/* FOOTER */
+
+body.mobile-preview footer {
+    border-top: 1px solid #292929;
+    text-align: center;
+}
+
+body.mobile-preview footer p {
+    line-height: 1.8;
+}
+/* BACK TO TOP BUTTON */
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#back-to-top:hover {
+    background: #bdbdbd;
+}
+
+body.mobile-preview #back-to-top {
+    right: 20px;
+    bottom: 20px;
+}
+
+/* PRODUCT SEARCH */
+
+.search-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 45px;
+}
+
+#product-search {
+    width: 100%;
+    padding: 16px 18px;
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+    outline: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: border 0.3s ease;
+}
+
+#product-search:focus {
+    border-color: white;
+}
+
+#product-search::placeholder {
+    color: #777;
+}
+
+body.mobile-preview .search-container {
+    max-width: 100%;
+    margin-bottom: 35px;
+}
+/* NO SEARCH RESULTS */
+
+#no-results {
+    display: none;
+    text-align: center;
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-top: 40px;
+}
+
+/* WISHLIST BUTTON */
+
+.product {
+    position: relative;
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 38px;
+    height: 38px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    border: 1px solid #555;
+    border-radius: 50%;
+    font-size: 23px;
+    cursor: pointer;
+    z-index: 5;
+    transition: 0.25s ease;
+}
+
+.wishlist-btn:hover {
+    background: white;
+    color: black;
+}
+
+.wishlist-btn.active {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+body.mobile-preview .wishlist-btn {
+    width: 36px;
+    height: 36px;
+}
+
+/* ==============================
+   CATEGORY FILTERS
+============================== */
+
+.category-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 35px auto 45px;
+    padding: 0 15px;
+}
+
+.filter-btn {
+    background: transparent;
+    color: #999;
+    border: 1px solid #333;
+    padding: 12px 24px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    color: white;
+    border-color: white;
+    background: #171717;
+}
+
+.filter-btn.active {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+/* MOBILE */
+
+body.mobile-preview .category-filters {
+    gap: 8px;
+    margin: 25px auto 30px;
+}
+
+body.mobile-preview .filter-btn {
+    padding: 10px 15px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* SMALL SCREENS */
+
+@media (max-width: 600px) {
+
+    .category-filters {
+        gap: 8px;
+        margin: 25px auto 30px;
+    }
+
+    .filter-btn {
+        padding: 10px 14px;
+        font-size: 10px;
+    }
+
+}
+/* ==============================
+   PREMIUM PRODUCT CARDS
+============================== */
+
+.product {
+    position: relative;
+    background: #101010;
+    border: 1px solid #202020;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    border-color: #555;
+}
+
+.product-image {
+    overflow: hidden;
+    background: #181818;
+}
+
+.product-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.product:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product h3 {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-top: 18px;
+}
+
+.product p {
+    color: #999;
+    font-size: 13px;
+}
+
+.view-product {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.view-product:hover {
+    background: white;
+    color: black;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .product:hover {
+        transform: none;
+    }
+
+    .product:hover .product-image img {
+        transform: none;
+    }
+}
+.product .view-product {
+    margin-top: 8px;
+}
+/* ==============================
+   PREMIUM HEADER
+============================== */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 7%;
+    background: #080808;
+    border-bottom: 1px solid #222;
+}
+
+/* LOGO */
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+header nav a {
+    color: #999;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+/* PLATFORM BUTTON */
+
+#platform-button {
+    background: transparent;
+    color: #aaa;
+    border: 1px solid #333;
+    padding: 10px 15px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#platform-button:hover {
+    color: white;
+    border-color: white;
+}
+/* ==============================
+   UNGROUN ABOUT SECTION
+============================== */
+
+.about {
+    position: relative;
+    text-align: center;
+    padding: 110px 15%;
+    background: #0b0b0b;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.about h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-bottom: 35px;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #999;
+    font-size: 13px;
+    line-height: 2.2;
+    letter-spacing: 2px;
+}
+
+.about span {
+    display: inline-block;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+    transition: letter-spacing 0.3s ease;
+}
+
+.about span:hover {
+    letter-spacing: 8px;
+}
+/* ==============================
+   UNGROUN PREMIUM FOOTER
+============================== */
+
+footer {
+    background: #070707;
+    border-top: 1px solid #252525;
+    padding: 65px 7% 30px;
+    text-align: center;
+}
+
+footer h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 7px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #888;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 45px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+footer span {
+    display: block;
+    padding-top: 25px;
+    border-top: 1px solid #222;
+    color: #555;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+/* ==============================
+   UNGROUN CUSTOM SCROLLBAR
+============================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+    border: 2px solid #080808;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Firefox */
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #080808;
+}
+
+
+/* =================================
+   UNGROUN — ORIGINAL CINEMATIC INTRO
+================================= */
+
+#intro {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    background: #050505;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 6%;
+    overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+#intro.intro-leaving {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#intro.intro-hidden {
+    display: none;
+}
+
+.intro-top,
+.intro-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #777;
+}
+
+.intro-top span:first-child {
+    color: #fff;
+    font-weight: 700;
+}
+
+.intro-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.intro-line {
+    width: 0;
+    height: 1px;
+    background: #fff;
+    margin: 0 auto 30px;
+    animation: introLine 1s ease forwards;
+}
+
+.intro-center h1 {
+    font-size: clamp(55px, 12vw, 150px);
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(45px);
+    animation: introLogo 1.2s cubic-bezier(.16, 1, .3, 1) 0.5s forwards;
+}
+
+.intro-tagline {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #aaa;
+    margin-top: 25px;
+    opacity: 0;
+    animation: introFade 1s ease 1.5s forwards;
+}
+
+.intro-edition {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #555;
+    margin-top: 55px;
+    opacity: 0;
+    animation: introFade 1s ease 2s forwards;
+}
+
+.intro-loading {
+    width: 180px;
+    height: 1px;
+    background: #292929;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.intro-progress-bar {
+    width: 0;
+    height: 100%;
+    background: white;
+    animation: introProgress 3.8s linear forwards;
+}
+
+.intro-percentage {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+#skip-intro {
+    position: absolute;
+    right: 6%;
+    bottom: 85px;
+    background: transparent;
+    border: 1px solid #444;
+    color: #aaa;
+    padding: 12px 18px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#skip-intro:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+@keyframes introLine {
+    to {
+        width: 120px;
+    }
+}
+
+@keyframes introLogo {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes introFade {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes introProgress {
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #intro {
+        padding: 25px 5%;
+    }
+
+    .intro-top,
+    .intro-bottom {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .intro-center h1 {
+        letter-spacing: 0.08em;
+    }
+
+    .intro-tagline {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .intro-edition {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    #skip-intro {
+        right: 5%;
+        bottom: 75px;
+    }
+}
+
+/* =================================
+   OUR PHILOSOPHY
+================================= */
+
+.philosophy {
+    background: #080808;
+    color: white;
+    padding: 130px 12%;
+    text-align: center;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.section-label {
+    display: block;
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+}
+
+.philosophy h2 {
+    font-size: clamp(35px, 6vw, 75px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 35px;
+}
+
+.philosophy p {
+    max-width: 600px;
+    margin: auto;
+    color: #999;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.philosophy-signature {
+    display: block;
+    margin-top: 45px;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+
+/* =================================
+   WHO WE ARE
+================================= */
+
+.who-we-are {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #0d0d0d;
+    color: white;
+    min-height: 550px;
+}
+
+.who-image {
+    min-height: 550px;
+    overflow: hidden;
+}
+
+.who-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: transform 0.7s ease;
+}
+
+.who-image img:hover {
+    transform: scale(1.04);
+}
+
+.who-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 12%;
+}
+
+.who-content h2 {
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+.who-content p {
+    color: #999;
+    font-size: 14px;
+    line-height: 2;
+    max-width: 450px;
+}
+
+.who-signature {
+    margin-top: 35px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #777;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .philosophy {
+        padding: 90px 7%;
+    }
+
+    .who-we-are {
+        grid-template-columns: 1fr;
+    }
+
+    .who-image {
+        min-height: 350px;
+        height: 350px;
+    }
+
+    .who-content {
+        padding: 70px 8%;
+    }
+
+}
+
+/* =================================
+   FAQ SECTION
+================================= */
+
+.faq {
+    background: #080808;
+    color: white;
+    padding: 120px 12%;
+    border-top: 1px solid #222;
+}
+
+.faq-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.faq-heading h2 {
+    font-size: clamp(38px, 6vw, 70px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.faq-heading > p {
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.faq-list {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #292929;
+}
+
+.faq-item:first-child {
+    border-top: 1px solid #292929;
+}
+
+.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 27px 5px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    font-size: 22px;
+    color: #888;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.faq-item > p {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.9;
+    padding: 0 5px 25px;
+    max-width: 650px;
+}
+
+@media (max-width: 700px) {
+    .faq {
+        padding: 85px 7%;
+    }
+
+    .faq-heading {
+        margin-bottom: 45px;
+    }
+
+    .faq-item summary {
+        font-size: 10px;
+        letter-spacing: 1px;
+        gap: 15px;
+    }
+}
+
+/* =================================
+   UNGROUN MANIFESTO PAGE
+================================= */
+
+.manifesto-page {
+    background: #050505;
+    color: white;
+}
+
+.manifesto-page header .logo {
+    text-decoration: none;
+    color: white;
+}
+
+.manifesto-page nav a.active {
+    color: white;
+}
+
+.manifesto {
+    max-width: 1600px;
+    margin: auto;
+    padding: 40px 8%;
+}
+
+.manifesto-top {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.manifesto-hero {
+    min-height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.manifesto-label {
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 5px;
+    margin-bottom: 35px;
+}
+
+.manifesto-hero h1 {
+    font-size: clamp(65px, 12vw, 155px);
+    line-height: 0.88;
+    letter-spacing: -8px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.manifesto-hero h1 span {
+    color: #555;
+}
+
+.manifesto-hero p {
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #999;
+    margin-top: 45px;
+}
+
+.manifesto-statement {
+    padding: 130px 8%;
+    border-top: 1px solid #252525;
+}
+
+.manifesto-statement > span {
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.manifesto-statement h2 {
+    font-size: clamp(35px, 6vw, 75px);
+    line-height: 1.1;
+    max-width: 900px;
+    margin: 35px 0;
+}
+
+.manifesto-statement p {
+    color: #999;
+    font-size: 14px;
+    line-height: 2;
+    max-width: 520px;
+}
+
+.manifesto-second {
+    text-align: right;
+}
+
+.manifesto-second h2,
+.manifesto-second p {
+    margin-left: auto;
+}
+
+.manifesto-ending {
+    padding: 150px 20px;
+    text-align: center;
+    border-top: 1px solid #252525;
+}
+
+.manifesto-ending h2 {
+    font-size: clamp(55px, 12vw, 130px);
+    letter-spacing: 12px;
+    margin: 0;
+}
+
+.manifesto-ending p {
+    color: #888;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin: 25px 0 45px;
+}
+
+.manifesto-ending a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #555;
+    padding: 16px 25px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.manifesto-ending a:hover {
+    background: white;
+    color: black;
+}
+
+@media (max-width: 700px) {
+
+    .manifesto {
+        padding: 30px 6%;
+    }
+
+    .manifesto-hero {
+        min-height: 550px;
+    }
+
+    .manifesto-hero h1 {
+        letter-spacing: -4px;
+    }
+
+    .manifesto-statement {
+        padding: 90px 3%;
+    }
+
+    .manifesto-second {
+        text-align: left;
+    }
+
+    .manifesto-second h2,
+    .manifesto-second p {
+        margin-left: 0;
+    }
+
+    .manifesto-ending h2 {
+        letter-spacing: 5px;
+    }
+
+}
+
+/* =================================
+   GIANT MANIFESTO BUTTON
+================================= */
+
+.manifesto-link {
+    background: #080808;
+    padding: 35px 8% 110px;
+    text-align: center;
+    color: white;
+}
+
+.manifesto-link > span {
+    display: block;
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.manifesto-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #444;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(30px, 7vw, 85px);
+    font-weight: 900;
+    letter-spacing: -3px;
+    transition: background 0.5s ease, color 0.5s ease,
+                border-color 0.5s ease, transform 0.5s ease;
+    animation: manifestoPulse 3s ease-in-out infinite;
+}
+
+.manifesto-arrow {
+    font-size: 0.65em;
+    transition: transform 0.4s ease;
+}
+
+.manifesto-button:hover {
+    background: white;
+    color: black;
+    border-color: white;
+    transform: scale(1.02);
+    animation: none;
+}
+
+.manifesto-button:hover .manifesto-arrow {
+    transform: translate(12px, -12px);
+}
+
+@keyframes manifestoPulse {
+    0%, 100% {
+        border-color: #333;
+    }
+    50% {
+        border-color: #aaa;
+    }
+}
+
+@media (max-width: 600px) {
+    .manifesto-link {
+        padding: 30px 6% 80px;
+    }
+
+    .manifesto-button {
+        min-height: 110px;
+        gap: 12px;
+        letter-spacing: -1px;
+    }
+}

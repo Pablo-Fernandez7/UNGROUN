@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNGROUN | Streetwear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CINEMATIC INTRO -->
+
+    <div id="intro">
+
+        <div class="intro-top">
+            <span>UNGROUN®</span>
+            <span>INDEPENDENT STREETWEAR</span>
+        </div>
+
+        <div class="intro-center">
+
+            <div class="intro-line"></div>
+
+            <h1>UNGROUN</h1>
+
+            <p class="intro-tagline">
+                BUILT DIFFERENT. WORN DIFFERENT.
+            </p>
+
+            <span class="intro-edition">
+                EST. 2026 — ORIGINAL COLLECTION
+            </span>
+
+        </div>
+
+        <div class="intro-bottom">
+
+            <span>WELCOME TO THE UNGROUN WORLD</span>
+
+            <div class="intro-loading">
+                <div class="intro-progress-bar"></div>
+            </div>
+
+            <span class="intro-percentage">00 — 100</span>
+
+        </div>
+
+        <button id="skip-intro">SKIP INTRO ↗</button>
+
+    </div>
+
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo">UNGROUN</div>
+
+        <div class="platform-selector">
+            <button id="platform-button">
+                PLATFORM <span>⌄</span>
+            </button>
+
+            <div id="platform-menu" class="platform-menu">
+                <button data-view="pc">PC</button>
+                <button data-view="mobile">MOBILE</button>
+            </div>
+        </div>
+
+        <nav>
+    <a href="#home">HOME</a>
+    <a href="#collection">SHOP</a>
+    <a href="#about">ABOUT</a>
+    <a href="#faq">FAQ</a>
+    <a href="carrito.html">CART (<span id="cart-count">0</span>)</a>
+</nav>
+    </header>
+
+
+    <!-- HERO -->
+
+    <main id="home">
+        <h1>UNGROUN</h1>
+        <p>BUILT DIFFERENT. WORN DIFFERENT.</p>
+
+        <a href="#collection" class="explore-btn">
+            EXPLORE COLLECTION
+        </a>
+    </main>
+
+
+    <!-- COLLECTION -->
+
+    <section class="collection" id="collection">
+
+        <h2>OUR COLLECTION</h2>
+
+        <!-- SEARCH -->
+
+        <div class="search-container">
+            <input
+                type="text"
+                id="product-search"
+                placeholder="SEARCH PRODUCTS..."
+                autocomplete="off"
+            >
+        </div>
+
+
+        <!-- CATEGORY FILTERS -->
+
+        <div class="category-filters">
+
+            <button class="filter-btn active" data-category="all">ALL</button>
+            <button class="filter-btn" data-category="tops">TOPS</button>
+            <button class="filter-btn" data-category="pants">PANTS</button>
+            <button class="filter-btn" data-category="jackets">JACKETS</button>
+            <button class="filter-btn" data-category="accessories">ACCESSORIES</button>
+
+        </div>
+
+
+        <!-- PRODUCTS -->
+
+        <div class="products">
+
+            <!-- T-SHIRT -->
+
+            <div class="product" data-category="tops">
+
+                <img src="images/camiseta.jpg" alt="Oversized Tee" class="product-image">
+
+                <button class="wishlist-btn" data-product="OVERSIZED TEE" aria-label="Add to wishlist">
+                    ♡
+                </button>
+
+                <span class="product-badge">BEST SELLER</span>
+
+                <h3>OVERSIZED TEE</h3>
+                <p>€39.90</p>
+
+                <a href="producto.html" class="view-product">VIEW PRODUCT</a>
+
+            </div>
+
+
+            <!-- HOODIE -->
+
+            <div class="product" data-category="tops">
+
+                <img src="images/hoodie.jpg" alt="Oversized Hoodie" class="product-image">
+
+                <button class="wishlist-btn" data-product="OVERSIZED HOODIE" aria-label="Add to wishlist">
+                    ♡
+                </button>
+
+                <h3>OVERSIZED HOODIE</h3>
+                <p>€69.90</p>
+
+                <a href="hoodie.html" class="view-product">VIEW PRODUCT</a>
+
+            </div>
+
+
+            <!-- CARGO PANTS -->
+
+            <div class="product" data-category="pants">
+
+                <img src="images/cargo.jpg" alt="Cargo Pants" class="product-image">
+
+                <button class="wishlist-btn" data-product="CARGO PANTS" aria-label="Add to wishlist">
+                    ♡
+                </button>
+
+                <span class="product-badge">NEW ARRIVAL</span>
+
+                <h3>CARGO PANTS</h3>
+                <p>€59.90</p>
+
+                <a href="cargo.html" class="view-product">VIEW PRODUCT</a>
+
+            </div>
+
+
+            <!-- BAGGY SWEATPANTS -->
+
+            <div class="product" data-category="pants">
+
+                <img src="images/baggy.jpg" alt="Baggy Sweatpants" class="product-image">
+
+                <button class="wishlist-btn" data-product="BAGGY SWEATPANTS" aria-label="Add to wishlist">
+                    ♡
+                </button>
+
+                <span class="product-badge">NEW ARRIVAL</span>
+
+                <h3>BAGGY SWEATPANTS</h3>
+                <p>€59.90</p>
+
+                <a href="baggy.html" class="view-product">VIEW PRODUCT</a>
+
+            </div>
+
+
+            <!-- BASEBALL CAP -->
+
+            <div class="product" data-category="accessories">
+
+                <img src="images/baseball.jpg" alt="Baseball Cap" class="product-image">
+
+                <button class="wishlist-btn" data-product="BASEBALL CAP" aria-label="Add to wishlist">
+                    ♡
+                </button>
+
+                <h3>BASEBALL CAP</h3>
+                <p>€24.90</p>
+
+                <a href="baseball.html" class="view-product">VIEW PRODUCT</a>
+
+            </div>
+
+
+            <!-- PUFFER JACKET -->
+
+            <div class="product" data-category="jackets">
+
+                <img src="images/puffer.jpg" alt="Puffer Jacket" class="product-image">
+
+                <button class="wishlist-btn" data-product="PUFFER JACKET" aria-label="Add to wishlist">
+                    ♡
+                </button>
+
+                <span class="product-badge">NEW ARRIVAL</span>
+
+                <h3>PUFFER JACKET</h3>
+                <p>€89.90</p>
+
+                <a href="puffer.html" class="view-product">VIEW PRODUCT</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <p id="no-results">
+            NO PRODUCTS FOUND.
+        </p>
+
+    </section>
+
+
+    <!-- OUR PHILOSOPHY -->
+
+    <section class="philosophy" id="philosophy">
+
+        <span class="section-label">01 — OUR MINDSET</span>
+
+        <h2>NOT MADE TO FOLLOW.<br>MADE TO STAND OUT.</h2>
+
+        <p>
+            We believe clothing is more than just what you wear.
+            It's a reflection of who you are.
+            We don't follow trends. We create our own identity.
+            Every piece represents simplicity, individuality and freedom.
+        </p>
+
+        <span class="philosophy-signature">BUILT DIFFERENT.</span>
+
+    </section>
+
+    <!-- MANIFESTO LINK -->
+
+    <section class="manifesto-link">
+
+        <span>DISCOVER WHAT WE STAND FOR</span>
+
+        <a href="manifesto.html" class="manifesto-button">
+            <span>OUR MANIFESTO</span>
+            <span class="manifesto-arrow">↗</span>
+        </a>
+
+    </section>
+
+
+    <!-- WHO WE ARE -->
+
+    <section class="who-we-are" id="who-we-are">
+
+        <div class="who-image">
+            <img src="images/camiseta.jpg" alt="UNGROUN original collection">
+        </div>
+
+        <div class="who-content">
+
+            <span class="section-label">02 — THE BRAND</span>
+
+            <h2>WHO<br>WE ARE.</h2>
+
+            <p>
+                UNGROUN is an independent streetwear brand
+                built around individuality and self-expression.
+                Our vision is simple: create timeless pieces
+                with a strong identity.
+                No limits. No rules. No need to fit in.
+            </p>
+
+            <span class="who-signature">UNGROUN® — EST. 2026</span>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+        <h2>ABOUT UNGROUN</h2>
+
+        <p>
+            UNGROUN IS A STREETWEAR BRAND BUILT AROUND
+            SIMPLICITY, IDENTITY AND INDIVIDUALITY.
+            WE BELIEVE THAT STYLE IS NOT ABOUT FOLLOWING
+            TRENDS. IT IS ABOUT CREATING YOUR OWN.
+        </p>
+
+        <span>BUILT DIFFERENT.</span>
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="faq" id="faq">
+
+        <div class="faq-heading">
+            <span class="section-label">03 — NEED HELP?</span>
+            <h2>FREQUENTLY<br>ASKED QUESTIONS.</h2>
+            <p>EVERYTHING YOU NEED TO KNOW ABOUT UNGROUN.</p>
+        </div>
+
+        <div class="faq-list">
+
+            <details class="faq-item">
+                <summary>HOW CAN I CHOOSE MY SIZE?</summary>
+                <p>
+                    Visit the product page and check the size guide
+                    before selecting your preferred size.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>HOW CAN I ADD A PRODUCT TO MY CART?</summary>
+                <p>
+                    Select your preferred size on the product page
+                    and click ADD TO CART.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>CAN I REMOVE PRODUCTS FROM MY CART?</summary>
+                <p>
+                    Yes. Visit your cart and click REMOVE
+                    next to the product you want to delete.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>WHAT PRODUCTS DOES UNGROUN OFFER?</summary>
+                <p>
+                    Our collection includes oversized tees,
+                    hoodies, cargo pants, sweatpants,
+                    caps and puffer jackets.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>HOW DOES THE WISHLIST WORK?</summary>
+                <p>
+                    Click the heart icon on a product to save
+                    it to your wishlist.
+                </p>
+            </details>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <h2>UNGROUN</h2>
+
+        <p>BUILT DIFFERENT. WORN DIFFERENT.</p>
+
+        <div class="footer-links">
+            <a href="#home">HOME</a>
+            <a href="#collection">SHOP</a>
+            <a href="#about">ABOUT</a>
+        </div>
+
+        <span>© 2026 UNGROUN. ALL RIGHTS RESERVED.</span>
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+
+    <button id="back-to-top" aria-label="Back to top">
+        ↑
+    </button>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+<!-- INTRO SCRIPT -->
+
+<script>
+    const intro = document.getElementById("intro");
+    const skipButton = document.getElementById("skip-intro");
+
+    function closeIntro() {
+        if (!intro || intro.classList.contains("intro-hidden")) return;
+
+        intro.classList.add("intro-leaving");
+
+        setTimeout(() => {
+            intro.classList.add("intro-hidden");
+        }, 1000);
+    }
+
+    const introTimer = setTimeout(closeIntro, 4200);
+
+    skipButton.addEventListener("click", () => {
+        clearTimeout(introTimer);
+        closeIntro();
+    });
+</script>
